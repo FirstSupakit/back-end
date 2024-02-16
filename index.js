@@ -97,7 +97,8 @@ const init = async () => {
         config: {
             cors: {
                 origin: ['*'],
-                additionalHeaders: ['cache-control', 'x-requested-width']
+                additionalHeaders: ['cache-control', 'x-requested-width'],
+                credentials: true
             }
         },
         handler: async function (request, reply) {
